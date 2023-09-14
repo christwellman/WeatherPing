@@ -3,6 +3,7 @@ name: Weather API Scheduler
 on:
   schedule:
     - cron: '0 */2 * * *' # This schedules the job to run every 2 hours. Adjust the cron expression as per your needs.
+  workflow_dispatch:  # This line allows manual triggering
 
 jobs:
   build:
