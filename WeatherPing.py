@@ -1,7 +1,9 @@
 import requests
+import os
+
 
 # Replace "YOUR_API_KEY" with your actual API key
-API_KEY = ""
+API_KEY = os.environ.get('OPENWEATHERMAP_API_KEY')
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 def get_weather_by_zip(zip_code, country_code="us"):
