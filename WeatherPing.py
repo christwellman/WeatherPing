@@ -22,11 +22,12 @@ def get_weather_by_address(address):
 
 if __name__ == "__main__":
     # Get weather by ZIP code
-    zip_code = input("Enter ZIP code: ")
+    # zip_code = input("Enter ZIP code: ")
+    zip_code = "27502"
     weather_data = get_weather_by_zip(zip_code)
     print(weather_data)
 
-    # Get weather by address
-    address = input("Enter address: ")
-    weather_data = get_weather_by_address(address)
-    print(weather_data)
+    # # Get weather by address
+    # address = input("Enter address: ")
+    # weather_data = get_weather_by_address(address)
+    # print(weather_data)
